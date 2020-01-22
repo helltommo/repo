@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- This xml file is well-formed as posted in FOL -->
+<olympic-games year="2016" season="summer">
+  <sport name="Archery" team="false">
+    <gender>women</gender>
+    <consecutive-games>12</consecutive-games>
+  </sport>
+  <sport name="Basketball" team="true">
+    <gender>men</gender>
+    <consecutive-games>19</consecutive-games>
+  </sport>
+  <sport name="BMX Biking" team="false">
+    <gender>women</gender>
+    <!-- Note that I've used a CDATA section on the next line so that the '<' character wouldn't be parsed -->
+    <consecutive-games><![CDATA[<2]]></consecutive-games>
+  </sport>
+  <sport name="Rowing" team="true">
+    <!-- Note that I've used a built-in entity on the next line (&amp;)-->
+    <gender>women &amp; men</gender>
+    <consecutive-games gender="women's">11</consecutive-games>
+    <consecutive-games gender="men's">27</consecutive-games>
+  </sport>
+</olympic-games>
